@@ -1,9 +1,11 @@
 import React from 'react';
 
 const TestItem = React.createClass({
-  render: function() {
+  render: function(props) {
     return (
-        <li>Test Item</li>
+        <li>
+          Test Item {this.props.id} - {this.props.name} - {this.props.experience}
+        </li>
     );
   }
 });

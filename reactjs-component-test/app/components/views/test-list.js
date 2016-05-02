@@ -1,11 +1,12 @@
 import React from 'react';
+import TestItem from './test-item';
 
 export default function(props) {
   return (
     <ul className="widget-list">
       {props.items.map(item => {
         return (
-            <li>Item</li>
+            <TestItem id={item.id} name={item.name} experience={item.experience}/>
         );
       })}
     </ul>
