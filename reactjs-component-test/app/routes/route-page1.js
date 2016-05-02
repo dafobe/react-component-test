@@ -13,7 +13,6 @@ const Page1Route = (
         <IndexRoute component={TestListContainer} />
       </Route>
     </Route>    
-
 );
 
 export default Page1Route;

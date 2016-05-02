@@ -4,7 +4,7 @@ const TestItem = React.createClass({
   render: function(props) {
     return (
         <li>
-          Test Item {this.props.id} - {this.props.name} - {this.props.experience}
+          Component {this.props.id} - {this.props.name} - {this.props.experience}
         </li>
     );
   }
