@@ -5,7 +5,7 @@ import axios from 'axios';
  */
 
 export function getItems() {
-  return axios.get('http://localhost:3010/items')
+  return axios.get('http://localhost:3011/items')
     .then(response => response.data);
 }
 
@@ -14,5 +14,5 @@ export function getItems() {
  */
 
 export function deleteItem(itemId) {
-  return axios.delete('http://localhost:3010/tests/' + itemId);
+  return axios.delete('http://localhost:3011/items/' + itemId);
 }
