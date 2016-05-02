@@ -39,7 +39,7 @@ gulp.task('restore-database', function() {
 });
 
 gulp.task('serve:api', ['restore-database'], function(done) {
-  cp.exec('node_modules/.bin/json-server --watch ./data/db.json --port 3010', {stdio: 'inherit'})
+  cp.exec('node_modules/.bin/json-server --watch ./data/db.json --port 3011', {stdio: 'inherit'})
     .on('close', done);
 });
 
@@ -61,6 +61,6 @@ gulp.task('serve:node', function(done) {
  * Main tasks
  */
 
-gulp.task('serve', ['serve:node']);
+gulp.task('serve', ['serve:node', 'serve:api']);
 gulp.task('watch', ['build', 'watch:build']);
 gulp.task('default', ['serve']);
