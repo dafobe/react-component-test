@@ -6,7 +6,7 @@ export default function(props) {
     <ul className="widget-list">
       {props.items.map(item => {
         return (
-            <TestItem id={item.id} name={item.name} experience={item.experience}/>
+            <TestItem key={item.id} name={item.name} experience={item.experience}/>
         );
       })}
     </ul>
