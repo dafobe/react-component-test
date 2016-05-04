@@ -1,8 +1,8 @@
 import React from 'react';
-import TestList from '../views/test-list';
+import ComponentList from '../views/component-list';
 import * as testApi from '../../services/test-api';
 
-const WidgetListContainer = React.createClass({
+const ComponentListContainer = React.createClass({
 
   getInitialState: function() {
     return {
@@ -26,10 +26,10 @@ const WidgetListContainer = React.createClass({
 
   render: function() {
     return (
-      <TestList items={this.state.items} deleteItem={this.deleteItem} />
+      <ComponentList items={this.state.items} deleteItem={this.deleteItem} />
     );
   }
 
 });
 
-export default WidgetListContainer;
+export default ComponentListContainer;

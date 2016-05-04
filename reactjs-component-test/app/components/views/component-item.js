@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TestItem = React.createClass({
+const ComponentItem = React.createClass({
   render: function(props) {
     return (
         <li>
@@ -10,4 +10,4 @@ const TestItem = React.createClass({
   }
 });
 
-export default TestItem;
+export default ComponentItem;
